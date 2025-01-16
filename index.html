@@ -2,10 +2,11 @@
 <html ⚡>
 <head>
   <meta charset="utf-8">
-  <title>AMP Page with Verified Boilerplate</title>
+  <title>AMP with Custom Script</title>
   <link rel="canonical" href="index.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
   <style amp-boilerplate>
     body {
       -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -86,9 +87,9 @@
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to AMP!</h1>
-    <p>This is a fully AMP-compliant webpage.</p>
-    <p>AMP validation errors should no longer appear.</p>
+    <h1>Welcome to AMP with Custom Script!</h1>
+    <p>The script is integrated via <code>amp-script</code>.</p>
+    <amp-script layout="container" src="geq.js"></amp-script>
   </div>
 </body>
 </html>
