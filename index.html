@@ -2,11 +2,12 @@
 <html ⚡>
 <head>
   <meta charset="utf-8">
-  <title>AMP with Custom Script</title>
+  <title>AMP Script Example</title>
   <link rel="canonical" href="index.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+  <meta name="amp-script-src" content="sha384-YOUR_CALCULATED_HASH">
   <style amp-boilerplate>
     body {
       -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
@@ -31,14 +32,6 @@
       }
     }
     @-ms-keyframes -amp-start {
-      from {
-        visibility: hidden;
-      }
-      to {
-        visibility: visible;
-      }
-    }
-    @-o-keyframes -amp-start {
       from {
         visibility: hidden;
       }
@@ -75,25 +68,23 @@
     .container {
       max-width: 600px;
       margin: 0 auto;
-      padding: 20px;
       background: white;
+      padding: 20px;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
-    h1 {
+    p {
       color: #0056b3;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to AMP with Custom Script!</h1>
-    <p>The script is integrated via <code>amp-script</code>.</p>
-    <amp-script layout="container" src="https://zaidretention.github.io/APMTestSite/ge.js">
-        <p>Your script is running here!</p>
-      </amp-script>
-      
-      
+    <h1>AMP with Hosted Script</h1>
+    <p>The geq.js script is now running on your AMP page!</p>
+    <amp-script layout="fixed-height" height="200" src="https://zaidretention.github.io/APMTestSite/ge.js">
+      <p>ge.js is initializing...</p>
+    </amp-script>
   </div>
 </body>
 </html>
