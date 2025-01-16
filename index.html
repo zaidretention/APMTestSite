@@ -2,7 +2,7 @@
 <html ⚡>
 <head>
   <meta charset="utf-8">
-  <title>AMP Page with Correct Boilerplate</title>
+  <title>AMP Page with Verified Boilerplate</title>
   <link rel="canonical" href="index.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -37,6 +37,14 @@
         visibility: visible;
       }
     }
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden;
+      }
+      to {
+        visibility: visible;
+      }
+    }
     @keyframes -amp-start {
       from {
         visibility: hidden;
@@ -59,7 +67,7 @@
   <style amp-custom>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+      padding: 20px;
       background-color: #f9f9f9;
       color: #333;
     }
